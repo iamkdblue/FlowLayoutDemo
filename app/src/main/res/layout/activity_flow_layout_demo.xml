@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FlowLayoutDemoActivity"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitleBusiness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Business Interest "
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="?android:textAppearanceSmall" />
+
+                <!--Hey Buddy it's my package name -->
+                <com.kdblue.app.FlowLayout
+                    android:id="@+id/flowBusiness"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.kdblue.app.FlowLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvTitlePrivate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Private Interest "
+                    android:textColor="@color/colorPrimary"
+                    android:textAppearance="?android:textAppearanceSmall"/>
+
+                <!--please enter your package name-->
+                <com.kdblue.app.FlowLayout
+                    android:id="@+id/flowPrivate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </com.kdblue.app.FlowLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
